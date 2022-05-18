@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220518 13:15:41.288" rpa="false" schemaversion="3">
+<suite id="s1" name="Project" source="C:\ProjetoAutomacao\projetoAutomacao\Tests\project.robot">
+<test id="s1-t1" name="login positive" line="13">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220518 13:15:41.470" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.br/ap/signin?openid.pape.max_auth_age=900&amp;openid.return_to=https%3A%2F%2Fwww.amazon.com.br%2Fgp%2Fyourstore%2Fhome%3Fpath%3D%252Fgp%252Fyourstore%252Fhome%26signIn%3D1%26useRedirectOnSuccess%3D1%26action%3Dsign-out%26ref_%3Dnav_AccountFlyout_signout&amp;openid.assoc_handle=brflex&amp;openid.mode=checkid_setup&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0'.</msg>
+<status status="PASS" starttime="20220518 13:15:41.470" endtime="20220518 13:15:46.935"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220518 13:15:48.938" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220518 13:15:46.936" endtime="20220518 13:15:48.938"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<arg>css= #authportal-main-section &gt; div:nth-child(2) &gt; div &gt; div.a-section &gt; form &gt; div &gt; div &gt; div &gt; h1</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20220518 13:15:48.938" endtime="20220518 13:15:48.959"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div[1]/form/div/div/div/div[1]/input[1]</arg>
+<arg>automacaoteste524@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220518 13:15:48.961" level="INFO">Typing text 'automacaoteste524@gmail.com' into text field 'xpath=/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div[1]/form/div/div/div/div[1]/input[1]'.</msg>
+<status status="PASS" starttime="20220518 13:15:48.961" endtime="20220518 13:15:49.059"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>css=body</arg>
+<arg>fazerLogin.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20220518 13:15:49.177" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="fazerLogin.png"&gt;&lt;img src="fazerLogin.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220518 13:15:49.059" endtime="20220518 13:15:49.177"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=#continue</arg>
+<arg>Left</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220518 13:15:49.177" level="INFO">Clicking element 'css=#continue' with Left.</msg>
+<status status="PASS" starttime="20220518 13:15:49.177" endtime="20220518 13:15:51.921"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220518 13:15:53.922" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220518 13:15:51.922" endtime="20220518 13:15:53.922"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div/form/div/div[1]/input</arg>
+<arg>Teste@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220518 13:15:53.925" level="INFO">Typing text 'Teste@123' into text field 'xpath=/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div/form/div/div[1]/input'.</msg>
+<status status="PASS" starttime="20220518 13:15:53.924" endtime="20220518 13:15:54.046"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=#signInSubmit</arg>
+<arg>Left</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220518 13:15:54.048" level="INFO">Clicking element 'css=#signInSubmit' with Left.</msg>
+<status status="PASS" starttime="20220518 13:15:54.047" endtime="20220518 13:15:54.399"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220518 13:15:56.412" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220518 13:15:54.400" endtime="20220518 13:15:56.412"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>css=body</arg>
+<arg>loginEfetuado.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20220518 13:15:58.809" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="loginEfetuado.png"&gt;&lt;img src="loginEfetuado.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220518 13:15:56.412" endtime="20220518 13:15:58.809"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220518 13:15:58.809" endtime="20220518 13:16:00.946"/>
+</kw>
+<doc>As a user I want to login to the site</doc>
+<status status="PASS" starttime="20220518 13:15:41.469" endtime="20220518 13:16:00.946"/>
+</test>
+<test id="s1-t2" name="login negative" line="30">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220518 13:16:00.948" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.br/ap/signin?openid.pape.max_auth_age=900&amp;openid.return_to=https%3A%2F%2Fwww.amazon.com.br%2Fgp%2Fyourstore%2Fhome%3Fpath%3D%252Fgp%252Fyourstore%252Fhome%26signIn%3D1%26useRedirectOnSuccess%3D1%26action%3Dsign-out%26ref_%3Dnav_AccountFlyout_signout&amp;openid.assoc_handle=brflex&amp;openid.mode=checkid_setup&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0'.</msg>
+<status status="PASS" starttime="20220518 13:16:00.948" endtime="20220518 13:16:05.153"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220518 13:16:07.165" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220518 13:16:05.154" endtime="20220518 13:16:07.165"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<arg>css= #authportal-main-section &gt; div:nth-child(2) &gt; div &gt; div.a-section &gt; form &gt; div &gt; div &gt; div &gt; h1</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20220518 13:16:07.166" endtime="20220518 13:16:07.228"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div[1]/form/div/div/div/div[1]/input[1]</arg>
+<arg>automacaoteste524@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220518 13:16:07.230" level="INFO">Typing text 'automacaoteste524@gmail.com' into text field 'xpath=/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div[1]/form/div/div/div/div[1]/input[1]'.</msg>
+<status status="PASS" starttime="20220518 13:16:07.229" endtime="20220518 13:16:07.378"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>css=#a-page &gt; div.a-section.a-padding-medium.auth-workflow</arg>
+<arg>fazerLogin2.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20220518 13:16:07.476" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="fazerLogin2.png"&gt;&lt;img src="fazerLogin2.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220518 13:16:07.378" endtime="20220518 13:16:07.476"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=#continue</arg>
+<arg>Left</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220518 13:16:07.477" level="INFO">Clicking element 'css=#continue' with Left.</msg>
+<status status="PASS" starttime="20220518 13:16:07.476" endtime="20220518 13:16:08.738"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220518 13:16:10.750" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220518 13:16:08.739" endtime="20220518 13:16:10.750"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div/form/div/div[1]/input</arg>
+<arg>Teste@12</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220518 13:16:10.750" level="INFO">Typing text 'Teste@12' into text field 'xpath=/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div/form/div/div[1]/input'.</msg>
+<status status="PASS" starttime="20220518 13:16:10.750" endtime="20220518 13:16:10.803"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=#signInSubmit</arg>
+<arg>Left</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220518 13:16:10.804" level="INFO">Clicking element 'css=#signInSubmit' with Left.</msg>
+<status status="PASS" starttime="20220518 13:16:10.804" endtime="20220518 13:16:11.141"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220518 13:16:13.151" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220518 13:16:11.141" endtime="20220518 13:16:13.151"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<arg>css=#auth-error-message-box &gt; div</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20220518 13:16:13.151" endtime="20220518 13:16:13.233"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>css=body</arg>
+<arg>senhaIncorreta.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20220518 13:16:13.353" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="senhaIncorreta.png"&gt;&lt;img src="senhaIncorreta.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220518 13:16:13.233" endtime="20220518 13:16:13.354"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220518 13:16:13.354" endtime="20220518 13:16:15.483"/>
+</kw>
+<doc>As a user I want to fail login to the site</doc>
+<status status="PASS" starttime="20220518 13:16:00.947" endtime="20220518 13:16:15.484"/>
+</test>
+<doc>This is a test positive</doc>
+<status status="PASS" starttime="20220518 13:15:41.289" endtime="20220518 13:16:15.485"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Project">Project</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
